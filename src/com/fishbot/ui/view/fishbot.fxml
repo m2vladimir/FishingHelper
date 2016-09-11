@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fishbot.ui.controller.FishbotController">
+   <children>
+      <GridPane layoutX="200.0" layoutY="155.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints percentHeight="15.0" vgrow="SOMETIMES" />
+          <RowConstraints percentHeight="1.0" vgrow="SOMETIMES" />
+          <RowConstraints percentHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="1.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="1.0" vgrow="SOMETIMES" />
+            <RowConstraints percentHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Separator GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Separator GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <GridPane GridPane.rowIndex="6">
+              <columnConstraints>
+                <ColumnConstraints percentWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints percentHeight="20.0" />
+                  <RowConstraints percentHeight="30.0" />
+                <RowConstraints percentHeight="50.0" />
+              </rowConstraints>
+               <children>
+                  <Button id="stopButton" fx:id="stopButton" contentDisplay="RIGHT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" text="STOP" textAlignment="RIGHT" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/stop.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="startButton" fx:id="startButton" contentDisplay="RIGHT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" text="START" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/start.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <CheckBox fx:id="logoutCheckbox" mnemonicParsing="false" text="Logout on stop" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font size="11.0" />
+                     </font></CheckBox>
+                  <FlowPane alignment="CENTER_LEFT" GridPane.rowIndex="1">
+                     <children>
+                        <CheckBox fx:id="stopTimerCheckbox" mnemonicParsing="false" text="Stop fishing after, min ">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </CheckBox>
+                        <TextField fx:id="stopTimerField" maxWidth="-Infinity" prefWidth="40.0">
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <Separator GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <GridPane GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints percentWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints percentHeight="40.0" />
+                  <RowConstraints percentHeight="40.0" />
+                  <RowConstraints percentHeight="20.0" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="statusLabel" alignment="TOP_CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Set color and click start to catch a fish" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                  <Label fx:id="errorLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" wrapText="true" />
+                  <Label fx:id="timerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="43.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane>
+              <columnConstraints>
+                  <ColumnConstraints percentWidth="33.0" />
+                <ColumnConstraints percentWidth="33.0" />
+                <ColumnConstraints percentWidth="34.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints percentHeight="100.0" />
+              </rowConstraints>
+               <children>
+                  <ButtonBar buttonMinWidth="25.0" GridPane.columnIndex="2">
+                    <buttons>
+                        <Button fx:id="faqButton" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/images/question.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip autoHide="true" text="HowTo" />
+                           </tooltip></Button>
+                        <Button fx:id="settingsButton" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/images/gears.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip autoHide="true" text="Advanced Settings" />
+                           </tooltip></Button>
+                    </buttons>
+                  </ButtonBar>
+                  <Hyperlink fx:id="homeLink">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip fx:id="hyperlinkTooltip" autoHide="true" />
+                     </tooltip></Hyperlink>
+                  <Label fx:id="versionLabel" text="Ver. 1.0.1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints percentWidth="50.0" />
+                <ColumnConstraints percentWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints percentHeight="100.0" />
+              </rowConstraints>
+               <children>
+                  <FlowPane alignment="CENTER_LEFT">
+                     <children>
+                        <Label text="Fishing button ">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fishingButtonField" alignment="TOP_LEFT" maxWidth="-Infinity" prefWidth="40.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip autoHide="true" text="In-game button assigned for fishing skill" />
+                           </tooltip>
+                        </TextField>
+                     </children>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER_RIGHT" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Lure button ">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="lureButtonField" maxWidth="-Infinity" prefWidth="40.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip autoHide="true" text="In-game button assigned for lure in bag. Can be empty." />
+                           </tooltip>
+                        </TextField>
+                     </children>
+                  </FlowPane>
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
