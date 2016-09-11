@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fishbot.ui.controller.HowtoController">
+   <children>
+      <GridPane layoutX="135.0" layoutY="140.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints percentWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints percentHeight="8.0" />
+          <RowConstraints percentHeight="7.0" />
+          <RowConstraints percentHeight="7.0" />
+            <RowConstraints percentHeight="7.0" />
+            <RowConstraints percentHeight="7.0" />
+            <RowConstraints percentHeight="7.0" />
+            <RowConstraints percentHeight="14.0" />
+            <RowConstraints percentHeight="7.0" />
+            <RowConstraints percentHeight="7.0" />
+            <RowConstraints percentHeight="7.0" />
+            <RowConstraints percentHeight="10.0" />
+            <RowConstraints minHeight="10.0" percentHeight="12.0" prefHeight="30.0" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="How to use:" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Run &quot;World of Warcraft&quot; game;" wrapText="true" GridPane.rowIndex="1" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Log in and move your character to some pond where you can catch a fish;" wrapText="true" GridPane.rowIndex="2" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Assign some key for fishing skill. It can be any letter or number without SHIFT, CTRL or ALT modifiers;" wrapText="true" GridPane.rowIndex="3" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Assign some key for lure in your bag if you want to use it;" wrapText="true" GridPane.rowIndex="4" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Disable autoloot option;" wrapText="true" GridPane.rowIndex="5" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Searching algorithm uses color of pixel on bobber. You may calibrate it - click Setup button, than find bobber in opened picture and click some pixel on the bobber.  Click on blue pixel if you intend to fishing in lava (or another red color pond). Click on red pixel if you will fishing in blue water;" wrapText="true" GridPane.rowIndex="6" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Set key for &quot;Fishing button&quot; field;" wrapText="true" GridPane.rowIndex="7" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Set key for &quot;Lure button&quot; field if you want to use it. Or leave it blank if you don't;" wrapText="true" GridPane.rowIndex="8" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - Click start button;" wrapText="true" GridPane.rowIndex="9" />
+            <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text=" - You may continue to use your PC while fishing process is running, but &quot;World of Warcraft&quot; window will appear on top every fishing round;" wrapText="true" GridPane.rowIndex="10" />
+            <GridPane GridPane.rowIndex="11">
+              <columnConstraints>
+                <ColumnConstraints percentWidth="50.0" />
+                <ColumnConstraints percentWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints percentHeight="100.0" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="okButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="OK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

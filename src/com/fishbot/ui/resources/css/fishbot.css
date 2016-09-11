@@ -1,0 +1,102 @@
+#anchorPane {
+	-fx-background-color: #75888C;
+}
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+	-fx-font-size: 12px;
+    -fx-background-color: linear-gradient(#0C374D, #093145);
+    -fx-background-insets: 0,0,0,0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#093145, #0C374D);
+}
+.button:pressed {
+	-fx-background-color: linear-gradient(#093145, #000);
+}
+.text-field {
+	-fx-border-width: 2px;
+	-fx-border-style: solid;
+	-fx-border-color: #888;
+	-fx-padding: 4px;
+	-fx-font-size: 1em;
+	-fx-background-color: #D1D0CE;
+	-fx-background-insets: 0,0,0,0;
+}
+.text-field:focused {
+	-fx-border-color: #000;
+	-fx-background-color: #B5C689;
+}
+.check-box .text {
+	-fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+.check-box  > *.box {
+	-fx-background-color: #D1D0CE;
+	-fx-background-insets: 0,0,0,0;
+}
+.check-box:selected .box {
+	-fx-background-color: #B5C689;
+}
+.color-picker {
+    -fx-background-color: linear-gradient(#0C374D, #093145);
+    -fx-background-insets: 0,0,0,0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.color-picker .color-picker-label .text {
+    -fx-fill: white;
+	-fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+}
+.color-picker:hover {
+    -fx-background-color: linear-gradient(#093145, #0C374D);
+}
+.color-picker:showing {
+	-fx-background-color: linear-gradient(#093145, #000);
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+.separator {
+	-fx-background-color: #8C7A76;
+    -fx-background-radius: 2;
+}
+.separator .line {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+.toggle-button {
+	-fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+	-fx-font-size: 12px;
+    -fx-background-color: linear-gradient(#0C374D, #093145);
+    -fx-background-insets: 0,0,0,0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.toggle-button:hover {
+	-fx-background-color: linear-gradient(#093145, #0C374D);
+}
+.toggle-button:selected {
+	-fx-background-color: linear-gradient(#093145, #000);
+}
+#stopButton {
+	-fx-font-size: 14px;
+}
+#startButton {
+	-fx-font-size: 14px;
+}
+#errorLabel {
+    -fx-text-fill: #902B15;
+}
